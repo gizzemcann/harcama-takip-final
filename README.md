@@ -1,87 +1,46 @@
-# Welcome to React Router!
 
-A modern, production-ready template for building full-stack React applications using React Router.
+#  Expense Tracker - Kişisel Bütçe Yönetim Sistemi
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Bu proje, **Web Geliştirme** eğitimi çerçevesinde, modern web teknolojileri ve mühendislik prensipleri kullanılarak geliştirilmiş bir bütçe yönetim uygulamasıdır. Kullanıcıların gelir ve giderlerini anlık olarak takip etmelerini, bakiye durumlarını analiz etmelerini ve verilerini güvenli bir şekilde saklamalarını sağlar.
 
-## Features
+##  Proje Hakkında
+Eğitim yönergesinde belirtilen tüm teknik gereksinimleri karşılayan bu uygulama; **React Router v7** altyapısı üzerine inşa edilmiş, **TypeScript** ile tip güvenliği sağlanmış ve **Tailwind CSS** ile modern bir kullanıcı arayüzüne kavuşturulmuştur.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+### Temel Özellikler (CRUD İşlemleri)
+- **Ekleme (Create):** Harcama veya gelir kalemlerini tutar, kategori ve işlem tipi bazında sisteme kaydetme.
+- **Listeleme (Read):** Kaydedilen tüm işlemlerin dinamik olarak Dashboard üzerinde görüntülenmesi.
+- **Güncelleme (Update):** İşlem tutarları üzerinde dinamik güncellemeler (örn: %10 artış fonksiyonu).
+- **Silme (Delete):** Hatalı veya güncelliğini yitirmiş kayıtların sistemden tek tıkla kaldırılması.
+- **Veri Kalıcılığı:** `LocalStorage` entegrasyonu sayesinde sayfa yenilense dahi verilerin korunması.
 
-## Getting Started
+##  Teknik Mimari ve Klasör Yapısı
+Proje, modülerlik ve sürdürülebilirlik ilkeleri doğrultusunda şu klasör yapısına ayrılmıştır:
 
-### Installation
+- **`/app/components`**: Tekrar kullanılabilir arayüz bileşenleri (Header, StatCard vb.).
+- **`/app/pages`**: Uygulamanın ana sayfa mantığının ve state yönetiminin bulunduğu alan.
+- **`/app/interfaces`**: `Expense` veri modelinin TypeScript interface tanımlamaları.
+- **`/app/routes`**: Sayfa yönlendirme ve ana giriş noktası.
 
-Install the dependencies:
+##  Tasarım ve Stil
+- **Framework:** React Router v7 (Remix Core)
+- **Styling:** Tailwind CSS (Responsive Tasarım)
+- **Language:** TypeScript
 
-```bash
-npm install
-```
+## Ekran Görüntüsü
+<img width="806" height="906" alt="image" src="https://github.com/user-attachments/assets/77d9822a-3646-4db9-b9fd-0e09039db315" />
 
-### Development
+## Canlı Uygulama & Kod Erişimi
+- **GitHub Repo:** https://github.com/gizzemcann/harcama-takip-final
+- **Canlı Link (Vercel):** harcama-takip-final.vercel.app
 
-Start the development server with HMR:
+##  Kurulum (Yerel Geliştirme)
+Projeyi kendi bilgisayarınızda çalıştırmak için:
 
-```bash
-npm run dev
-```
+1. Depoyu klonlayın: `git clone <repo-url>`
+2. Bağımlılıkları yükleyin: `npm install`
+3. Uygulamayı başlatın: `npm run dev`
 
-Your application will be available at `http://localhost:5173`.
 
-## Building for Production
 
-Create a production build:
 
-```bash
-npm run build
-```
 
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
