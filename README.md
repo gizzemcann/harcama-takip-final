@@ -31,7 +31,7 @@ Proje, modülerlik ve sürdürülebilirlik ilkeleri doğrultusunda şu klasör y
 
 ## Canlı Uygulama & Kod Erişimi
 - **GitHub Repo:** https://github.com/gizzemcann/harcama-takip-final
-- **Canlı Link (Vercel):** harcama-takip-final.vercel.app
+- **Canlı Link (Vercel):** www.harcama-takip-final.vercel.app
 
 ##  Kurulum (Yerel Geliştirme)
 Projeyi kendi bilgisayarınızda çalıştırmak için:
